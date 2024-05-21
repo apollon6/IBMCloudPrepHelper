@@ -1,0 +1,16 @@
+{
+  "name": "ibmc-prep-shaker",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "IBM Cloud Prep Shaker",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": [
+    "https://ibm-cloud-prep.yourlearning.ibm.com/quizzes/*"
+  ],
+  "permissions": [
+    "tabs",
+    "scripting"
+  ]
+}

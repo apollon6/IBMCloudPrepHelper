@@ -3,7 +3,11 @@ const SECTION_QUIZ_PATH = "/section-quiz";
 const CERTIFICATION_QUIZ_PATH = "/quiz";
 
 chrome.tabs.onUpdated.addListener((_tabId, changeInfo, tab) => {
-	if (changeInfo.status === "complete" && isQuizUrl(tab.url)) {
+	const url =
+		tab.url.indexOf("?") === -1
+			? tab.url
+			: tab.url.substr(0, tab.url.indexOf("?"));
+	if (changeInfo.status === "complete" && isQuizUrl(url)) {
 		chrome.scripting.executeScript({
 			target: { tabId: tab.id },
 			files: ["js/content-script.js"],

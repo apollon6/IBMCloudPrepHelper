@@ -1,16 +1,13 @@
 {
-  "name": "ibmc-prep-shaker",
-  "version": "1.0.0",
+  "name": "ibmc-prep-helper",
+  "version": "1.1.0",
   "manifest_version": 3,
-  "description": "IBM Cloud Prep Shaker",
+  "description": "IBM Cloud Prep Helper",
   "background": {
     "service_worker": "js/background.js"
   },
   "host_permissions": [
-    "https://ibm-cloud-prep.yourlearning.ibm.com/quizzes/*"
+    "https://www.ibm.com/training/cloud/cloud-prep/quizzes/*"
   ],
-  "permissions": [
-    "tabs",
-    "scripting"
-  ]
+  "permissions": ["tabs", "scripting", "contextMenus", "clipboardWrite"]
 }

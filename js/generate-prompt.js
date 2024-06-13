@@ -9,7 +9,7 @@
 	);
 
 	const choices = ABCD.slice(0, answers.length).join(", ");
-	let prompt = `次の問題の回答は${choices}のうち、どれでしょうか。回答に対する解説となぜ他の回答が誤りなのかを含めて教えてください。\n`;
+	let prompt = `次の問題の回答は${choices}のうち、どれでしょうか。回答に対する解説となぜ他の回答が誤りなのかを含めて日本語で教えてください。\n\n`;
 	prompt += `問題文：\n${question.innerHTML}\n\n`;
 	for (const [index, answer] of Object.entries(answers)) {
 		prompt += `${ABCD[index]}. ${answer.innerHTML}\n`;

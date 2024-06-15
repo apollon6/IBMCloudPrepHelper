@@ -2,7 +2,6 @@
 	const loading = document.querySelector(
 		".flex.justify-center.items-center.h-full",
 	);
-	console.log(loading);
 	const options = {
 		threshold: 1,
 	};

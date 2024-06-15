@@ -7,7 +7,6 @@
 		threshold: 1,
 	};
 	const observer = new IntersectionObserver((entries) => {
-		console.log("hoge2");
 		for (const entry of entries) {
 			if (!entry.isIntersecting) {
 				setTimeout(() => {
@@ -19,7 +18,6 @@
 						".grid.grid-cols-1.md\\:grid-cols-2.gap-8.mt-5",
 					);
 					const arrayAnswers = Array.from(answers.children);
-					console.log(arrayAnswers);
 
 					answers.innerHTML = "";
 					divs.innerHTML = "";

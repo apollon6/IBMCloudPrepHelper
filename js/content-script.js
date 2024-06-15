@@ -28,7 +28,7 @@
 
 					divs.appendChild(label);
 					divs.appendChild(answers);
-				}, 200);
+				}, 100);
 			}
 		}
 	}, options);
